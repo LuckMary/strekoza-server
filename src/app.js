@@ -49,11 +49,12 @@ const mocks = async () => {
 
   userIds.forEach(async userId => {
     // const postIds = []
-    const date = faker.date.between(
-      '2021-06-02T00:00:00.000Z',
-      '2022-06-02T00:00:00.000Z',
-    )
+
     for (let index = 0; index < 10; index++) {
+      const date = faker.date.between(
+        '2021-06-02T00:00:00.000Z',
+        '2022-06-02T00:00:00.000Z',
+      )
       const post = await Post.create({
         title: faker.lorem.sentence(),
         body: faker.lorem.paragraph(5),
