@@ -14,6 +14,7 @@ const schema = new Schema(
         ref: 'Tag',
       },
     ],
+    photo: String,
   },
   {
     timestamps: true,

@@ -10,7 +10,7 @@ const schema = new Schema(
       required: true,
       default: 'user',
     },
-    gender: { type: String, enum: ['woman', 'man'] },
+    gender: { type: String, enum: ['female', 'male'] },
     birthday: { type: Date },
     avatar: String,
   },
