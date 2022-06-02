@@ -1,0 +1,11 @@
+{
+  "ignore": ["node_modules"],
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 3001,
+    "MONGO_MZNEXT_URI": "mongodb://localhost:27017/strekoza"
+  },
+  "watch": "./",
+  "ext": ".js,.json",
+  "exec": "babel-node src/app.js"
+}
