@@ -1,9 +1,9 @@
 import Router from '@koa/router'
 
-const route = new Router({ prefix: '/posts' })
+const route = new Router({ prefix: '/user' })
 
 route.get('/', ctx => {
-  ctx.body = { posts: 'posts' }
+  ctx.body = { user: 'user' }
 })
 
 export default route
