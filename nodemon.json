@@ -3,7 +3,7 @@
   "env": {
     "NODE_ENV": "development",
     "PORT": 3001,
-    "MONGO_MZNEXT_URI": "mongodb://localhost:27017/strekoza"
+    "MONGO_URI": "mongodb://localhost:27017/strekoza"
   },
   "watch": "./",
   "ext": ".js,.json",
