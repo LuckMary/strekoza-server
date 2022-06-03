@@ -15,6 +15,12 @@ const schema = new Schema(
       },
     ],
     photo: String,
+    status: {
+      type: String,
+      enum: ['published', 'moderated', 'draft'],
+      required: true,
+      default: 'moderated',
+    },
   },
   {
     timestamps: true,

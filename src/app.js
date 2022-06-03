@@ -63,6 +63,7 @@ const mocks = async () => {
           .sort(() => 0.5 - Math.random())
           .slice(0, Math.floor(Math.random() * 4)),
         photo: faker.image.cats(1234, 2345, true),
+        status: Math.random() < 0.7 ? 'published' : 'moderated',
         createdAt: date,
         updatedAt: date,
       })
